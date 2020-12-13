@@ -10,7 +10,13 @@
     
       <div class="footer-col">
         <span class="footer-meta">Made with ♥ using Jekyll.</span>
-        {%- if site.version.enable -%}<span class="footer-meta">Build: {% project_version %}</span>{%- endif -%}
+        {%- if site.version.enable -%}
+        {%- if site.version.base_url -%}
+        <span class="footer-meta">Build: <a href="{{ site.version.base_url | cgi_escape | escape }}{% project_version | cgi_escape | escape  %}">{% project_version %}</a></span>
+        {%- else -%}
+        <span class="footer-meta">Build: {% project_version %}</span>
+        {%- endif -%}
+        {%- endif -%}
       </div>
 
     </div>

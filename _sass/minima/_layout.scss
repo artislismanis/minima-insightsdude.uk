@@ -156,6 +156,7 @@
 .footer-meta {
   font-size: 14px;
   color: $grey-color;
+  padding-right: 5px;
 }
 
 @include media-query($on-laptop) {
