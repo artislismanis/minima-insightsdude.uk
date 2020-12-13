@@ -9,9 +9,13 @@
       </div>
     
       <div class="footer-col">
-        <span class="footer-meta">Copyright &copy; {%- if site.time | date: '%Y' == site.minima.copyright_start | date: '%Y' -%}{{site.time | date: '%Y'}}{%- else -%}{{site.minima.copyright_start | date: '%Y'}}-{{site.time | date: '%Y'}}{%- endif -%} {{site.title}}</span>
-        <span class="footer-meta">The content on this blog is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></span>
+        <span class="footer-meta">Copyright&nbsp;&copy;&nbsp;{%- if site.time | date: '%Y' == site.minima.copyright_start | date: '%Y' -%}{{site.time | date: '%Y'}}{%- else -%}{{site.minima.copyright_start | date: '%Y'}}&nbsp;-&nbsp;{{site.time | date: '%Y'}}{%- endif -%}&nbsp;{{site.title}}.</span>
+        <span class="footer-meta"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>The content in this blog is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
       </div>
+
+      
+
+
 
       <div class="footer-col">
         <span class="footer-meta">Made with ♥ using Jekyll.</span>
