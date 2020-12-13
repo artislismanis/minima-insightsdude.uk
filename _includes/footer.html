@@ -18,9 +18,9 @@
     
       <div class="footer-col">
         <span class="footer-meta">Made with ♥ using Jekyll.</span>
-        {%- if site.version.enable -%}
-        {%- if site.version.base_url -%}
-        <span class="footer-meta">Build: <a href="{{ site.version.base_url}}/{% project_version %}">{% project_version %}</a></span>
+        {%- if site.minima.version.enable -%}
+        {%- if site.minima.version.base_url -%}
+        <span class="footer-meta">Build: <a href="{{ site.minima.version.base_url}}/{% project_version %}">{% project_version %}</a></span>
         {%- else -%}
         <span class="footer-meta">Build: {% project_version %}</span>
         {%- endif -%}
