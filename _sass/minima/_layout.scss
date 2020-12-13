@@ -119,6 +119,10 @@
 .social-media-list {
   list-style: none;
   margin-left: 0;
+
+  > li {
+    display: inline;
+  }
 }
 
 .footer-col-wrapper {
@@ -129,7 +133,7 @@
 }
 
 .footer-col {
-  float: left;
+  text-align: center;
   margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
 }
@@ -147,6 +151,12 @@
 .footer-col-3 {
   width: -webkit-calc(45% - (#{$spacing-unit} / 2));
   width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+.footer-meta {
+  font-size: 14px;
+  color: $grey-color;
+  padding-right: 5px;
 }
 
 @include media-query($on-laptop) {
@@ -169,6 +179,7 @@
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
+
 
 
 

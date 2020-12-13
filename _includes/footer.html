@@ -2,34 +2,31 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
+      
+      <div class="footer-col">
         {%- include social.html -%}
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+    
+      <div class="footer-col">
+        <span class="footer-meta">Copyright&nbsp;&copy;&nbsp;{%- if site.time | date: '%Y' == site.minima.copyright_start | date: '%Y' -%}{{site.time | date: '%Y'}}{%- else -%}{{site.minima.copyright_start | date: '%Y'}}&nbsp;-&nbsp;{{site.time | date: '%Y'}}{%- endif -%}&nbsp;{{site.title}}. Some rights reserved.</span>
       </div>
+
+      <div class="footer-col">
+        <span class="footer-meta"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></span>
+      </div>
+    
+      <div class="footer-col">
+        <span class="footer-meta">Made with <span style="color: red">&hearts;</span> using Jekyll.</span>
+        {%- if site.minima.version.enable -%}
+        {%- if site.minima.version.base_url -%}
+        <span class="footer-meta">Build: <a href="{{ site.minima.version.base_url}}/{% project_version %}">{% project_version %}</a></span>
+        {%- else -%}
+        <span class="footer-meta">Build: {% project_version %}</span>
+        {%- endif -%}
+        {%- endif -%}
+      </div>
+
     </div>
-
   </div>
-
 </footer>
