@@ -2,7 +2,9 @@
 layout: default
 ---
 <div class="home">
-  
+  <!-- debug paginator -->
+  {{paginator}}
+
   <!-- post listing -->
   {%- if site.posts.size > 0 -%}
     <ul class="post-list">
