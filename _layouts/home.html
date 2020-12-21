@@ -4,13 +4,9 @@ layout: default
 <div class="home">
   <!-- debug paginator -->
   Paginator
-  {{site.paginator}}
-  Pages
-  {{site.pages}}
-  Posts
-  {{site.posts}}
+  {{paginator}}
   Site
-  {{site}}
+  {{site.posts.size}}
 
   <!-- post listing -->
   {%- if site.posts.size > 0 -%}
