@@ -19,10 +19,10 @@
         <div class="trigger">
           {% for my_page in site.pages %}
             {% unless my_page.exclude %}
-                {% if my_page.title and my_page.autogen == nil %}
-                  <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-                {% endif %}   
-             {% endunless %}
+              {% if my_page.title and my_page.autogen == nil %}
+                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              {% endif %}   
+            {% endunless %}
           {% endfor %}
         </div>
       </nav>
