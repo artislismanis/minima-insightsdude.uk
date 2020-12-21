@@ -3,14 +3,18 @@ layout: default
 ---
 <div class="home">
   <!-- debug paginator -->
+  Paginator
   {{site.paginator}}
+  Pages
   {{site.pages}}
+  Posts
   {{site.posts}}
+  Site
+  {{site}}
 
   <!-- post listing -->
   {%- if site.posts.size > 0 -%}
     <ul class="post-list">
-      {{ paginator.posts }}
       {%- for post in paginator.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
